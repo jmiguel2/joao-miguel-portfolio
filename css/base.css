@@ -1,0 +1,58 @@
+body {
+  background: var(--color-black);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+.container {
+  width: min(var(--content-width), calc(100% - (var(--page-padding) * 2)));
+  margin-inline: auto;
+}
+
+.section-dark { background: var(--color-black); color: var(--color-cream); }
+.section-olive { background: var(--color-olive); color: var(--color-cream); }
+.section-cream { background: var(--color-cream); color: var(--color-black); }
+
+.technical-label {
+  font: 400 12px/1.25 var(--font-mono);
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.body-copy {
+  max-width: 520px;
+  font: 400 18px/1.55 var(--font-body);
+}
+
+.display-title,
+.section-title,
+.project-title,
+.work-title,
+.about__title,
+.contact__title,
+.contact__statement,
+.service-item__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section-header {
+  padding-block: 96px 70px;
+}
+
+.section-header--compact {
+  padding-bottom: 50px;
+}
+
+.section-header--light {
+  color: var(--color-black);
+}
+
+.section-title {
+  margin-top: 18px;
+  font-size: clamp(72px, 8.3vw, 120px);
+  line-height: .92;
+  letter-spacing: -.02em;
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio audiovisual de João Miguel — Videomaker, Editor e Motion Designer.">
+  <title>João Miguel — Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="#inicio" aria-label="João Miguel — início">JOÃO MIGUEL</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span>MENU</span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#joao">João Miguel</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#motion">Motion</a>
+        <a href="#edicao">Edição</a>
+        <a href="#outros">Outros Trabalhos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 01 — CAPA -->
+    <section class="hero" id="inicio" aria-label="Capa">
+      <div class="hero__media">
+        <img src="assets/images/cover/cover.png" alt="Imagem de capa do portfólio de João Miguel">
+      </div>
+
+      <div class="hero__overlay"></div>
+
+      <div class="hero__technical hero__technical--top">
+        <span class="rec-indicator"><span class="rec-indicator__dot"></span> REC</span>
+        <span>A001</span>
+      </div>
+
+      <h1 class="hero__title">PORTFÓLIO</h1>
+
+      <div class="hero__portrait">
+        <img src="assets/images/cover/portrait.png" alt="João Miguel">
+      </div>
+
+      <div class="hero__technical hero__technical--bottom">
+        <span>JOÃO MIGUEL</span>
+        <span>VIDEOMAKER · EDITOR · MOTION DESIGNER</span>
+      </div>
+    </section>
+
+    <!-- 02 — JOÃO MIGUEL -->
+    <section class="intro section-olive" id="joao">
+      <div class="container intro__grid">
+        <div class="intro__content">
+          <p class="technical-label">VIDEOMAKER · EDITOR · MOTION DESIGNER</p>
+          <h2 class="display-title display-title--intro" aria-label="João Miguel">JO<span class="name-letter-a">A<span class="name-tilde" aria-hidden="true">~</span></span>O<br>MIGUEL</h2>
+          <p class="intro__quote">Antes do REC, eu penso na história.</p>
+          <p class="body-copy">Cada vídeo começa antes do REC.</p>
+          <a class="button button--dark" href="#projetos">VER PROJETOS ↓</a>
+        </div>
+
+        <figure class="intro__image">
+          <img src="assets/images/joao/joao.png" alt="João Miguel" width="1024" height="1536" loading="lazy" decoding="async">
+          <figcaption>A001</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 03 — PROJETOS EM DESTAQUE -->
+    <section class="projects section-dark" id="projetos">
+      <div class="container">
+        <header class="section-header">
+          <p class="technical-label">03 TRABALHOS</p>
+          <h2 class="section-title">PROJETOS<br>EM DESTAQUE</h2>
+        </header>
+
+        <article class="project">
+          <div class="project__info">
+            <span class="project-number">01</span>
+            <span class="category-tag">MOTION · DIREÇÃO VISUAL</span>
+            <h3 class="project-title">ATÉ SERMOS UM</h3>
+          </div>
+          <div class="project__media">
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/destaque/ate-sermos-um.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir Até Sermos Um">▶</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project--reverse">
+          <div class="project__info">
+            <span class="project-number">02</span>
+            <span class="category-tag">EDIÇÃO · VÍDEO</span>
+            <h3 class="project-title">PREGAÇÃO PR. MARCIO BARBOSA</h3>
+          </div>
+          <div class="project__media">
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/destaque/pregacao-pr-marcio-barbosa.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir Pregação Pr. Marcio Barbosa">▶</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__info">
+            <span class="project-number">03</span>
+            <span class="category-tag">EDIÇÃO · COLORIZAÇÃO</span>
+            <h3 class="project-title">LOG VS EDITADO</h3>
+          </div>
+          <div class="project__media project__media--split">
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/destaque/log-vs-editado.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir Log vs Editado">▶</button>
+            </div>
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/destaque/color-reel.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir Color Reel">▶</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04 — MOTION -->
+    <section class="work-section section-dark" id="motion">
+      <div class="container">
+        <header class="section-header section-header--compact">
+          <p class="technical-label section-number--terracotta">04</p>
+          <h2 class="section-title">MOTION</h2>
+        </header>
+
+        <article class="work-row">
+          <div class="work-row__info">
+            <span class="project-number">A ·</span>
+            <h3 class="work-title">3D IMAGEM - VIDEO</h3>
+          </div>
+          <div class="work-row__media">
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/motion/3d-imagem-video.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir 3D Imagem - Video">▶</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-row work-row--reverse">
+          <div class="work-row__info">
+            <span class="project-number">B ·</span>
+            <h3 class="work-title">IMITADORES DE CRISTO</h3>
+          </div>
+          <div class="work-row__media">
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/motion/imitadores-de-cristo.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir Imitadores de Cristo">▶</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 05 — EDIÇÃO -->
+    <section class="work-section section-dark" id="edicao">
+      <div class="container">
+        <header class="section-header section-header--compact">
+          <p class="technical-label">05</p>
+          <h2 class="section-title">EDIÇÃO</h2>
+        </header>
+
+        <article class="work-row">
+          <div class="work-row__info">
+            <span class="project-number">A ·</span>
+            <h3 class="work-title">SUBMERSOS — ANÚNCIO</h3>
+          </div>
+          <div class="work-row__media">
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/edicao/submersos-anuncio.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir Submersos — Anúncio">▶</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-row work-row--reverse">
+          <div class="work-row__info">
+            <span class="project-number">B ·</span>
+            <h3 class="work-title">ABONO DE PERMANÊNCIA — REELS</h3>
+          </div>
+          <div class="work-row__media">
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/edicao/abono-de-permanencia-reels.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir Abono de Permanência — Reels">▶</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 06 — OUTROS TRABALHOS -->
+    <section class="other-work section-dark" id="outros">
+      <div class="container">
+        <header class="section-header">
+          <p class="technical-label section-number--terracotta">06</p>
+          <h2 class="section-title">OUTROS<br>TRABALHOS</h2>
+        </header>
+
+        <div class="work-category">
+          <div class="work-category__heading">
+            <span class="project-number">A ·</span>
+            <h3 class="work-title">MÚSICA &amp; ARTISTAS</h3>
+          </div>
+          <div class="video-grid video-grid--two">
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/artistas/william-nascimento.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir trabalho de Música e Artistas 1">▶</button>
+            </div>
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/artistas/anne-maciel.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir trabalho de Música e Artistas 2">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-category">
+          <div class="work-category__heading">
+            <span class="project-number">B ·</span>
+            <h3 class="work-title">COMERCIAL</h3>
+          </div>
+          <div class="video-grid video-grid--two">
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/comercial/xicaras-click-no-lar.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir trabalho comercial 1">▶</button>
+            </div>
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/comercial/moto-eletrica-click-no-lar.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir trabalho comercial 2">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-category">
+          <div class="work-category__heading">
+            <span class="project-number">C ·</span>
+            <h3 class="work-title">EVENTOS</h3>
+          </div>
+          <div class="video-grid video-grid--three">
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/eventos/recap-connect-recreio-2k24.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir evento 1">▶</button>
+            </div>
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/eventos/especial-de-natal-advec-recreio.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir evento 2">▶</button>
+            </div>
+            <div class="video-wrapper">
+              <video class="portfolio-video" playsinline preload="metadata">
+                <source src="assets/videos/eventos/connect-conference-2k26.mp4" type="video/mp4">
+              </video>
+              <button class="video-play" type="button" aria-label="Reproduzir evento 3">▶</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 — SOBRE -->
+    <section class="about section-olive" id="sobre">
+      <div class="container about__grid">
+        <figure class="about__image">
+          <img src="assets/images/about/about.png" alt="João Miguel no Rio de Janeiro" width="399" height="528" loading="lazy" decoding="async">
+        </figure>
+
+        <div class="about__content">
+          <p class="technical-label">07 — SOBRE</p>
+          <h2 class="about__title">ANTES DO REC,<br>EU PENSO NA HISTÓRIA.</h2>
+          <p class="body-copy">Sou João Miguel, videomaker, editor e motion designer. Gosto de pensar na ideia antes de pensar na câmera. Meu trabalho envolve transformar conceitos, histórias e referências em imagens através de direção, edição e motion</p>
+          <p class="technical-label about__location">RIO DE JANEIRO</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 — SERVIÇOS -->
+    <section class="services section-cream" id="servicos">
+      <div class="container">
+        <header class="section-header section-header--light">
+          <p class="technical-label">08</p>
+          <h2 class="section-title">O QUE EU FAÇO</h2>
+        </header>
+
+        <div class="services__grid">
+          <article class="service-item">
+            <span class="service-item__number">01</span>
+            <h3 class="service-item__title">VIDEOMAKER</h3>
+            <p class="service-item__text">Conteúdo audiovisual pensado para transformar uma ideia em imagem.</p>
+          </article>
+
+          <article class="service-item">
+            <span class="service-item__number">02</span>
+            <h3 class="service-item__title">EDIÇÃO</h3>
+            <p class="service-item__text">Montagem, ritmo e construção visual para vídeos com propósito.</p>
+          </article>
+
+          <article class="service-item">
+            <span class="service-item__number">03</span>
+            <h3 class="service-item__title">MOTION DESIGN</h3>
+            <p class="service-item__text">Elementos gráficos e movimento integrados à linguagem do projeto.</p>
+          </article>
+
+          <article class="service-item">
+            <span class="service-item__number">04</span>
+            <h3 class="service-item__title">PRODUÇÃO</h3>
+            <p class="service-item__text">Estruturação visual e acompanhamento da produção audiovisual.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 — CONTATO -->
+    <section class="contact section-dark" id="contato">
+      <div class="container contact__inner">
+        <p class="technical-label">09 — CONTATO</p>
+        <h2 class="contact__title">TEM UM PROJETO?</h2>
+        <p class="contact__statement">ME CONTA O QUE VOCÊ<br>ESTÁ PENSANDO.</p>
+
+        <a class="button button--cream" href="https://api.whatsapp.com/send/?phone=5521985372905&amp;text=Oi+Jo%C3%A3o%2C+vi+seu+portf%C3%B3lio+e+quero+falar+sobre+um+projeto+de+&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer" aria-label="Falar com João Miguel pelo WhatsApp">FALAR COMIGO →</a>
+
+        <div class="contact__links">
+          <a href="https://api.whatsapp.com/send/?phone=5521985372905&amp;text=Oi+Jo%C3%A3o%2C+vi+seu+portf%C3%B3lio+e+quero+falar+sobre+um+projeto+de+&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WHATSAPP</a>
+          <a href="https://www.instagram.com/joaomiguel.videomaker/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">INSTAGRAM</a>
+          <a href="https://www.behance.net/miguelmoura14" target="_blank" rel="noopener noreferrer" aria-label="Behance">BEHANCE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-dark">
+    <div class="container site-footer__inner">
+      <span class="rec-indicator"><span class="rec-indicator__dot"></span> REC</span>
+      <span>JOÃO MIGUEL · A001 · 2026</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

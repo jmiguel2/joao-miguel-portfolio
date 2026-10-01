@@ -1,0 +1,363 @@
+@media (max-width: 1100px) {
+  :root {
+    --page-padding: 38px;
+  }
+
+  .main-nav {
+    gap: 13px;
+    font-size: 10px;
+  }
+
+  .hero__technical {
+    left: var(--page-padding);
+    right: var(--page-padding);
+  }
+
+  .intro__grid,
+  .about__grid {
+    gap: 45px;
+  }
+
+  .project,
+  .work-row {
+    gap: 45px;
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-item:nth-child(2) {
+    border-right: 0;
+  }
+
+  .service-item:nth-child(-n+2) {
+    border-bottom: 1px solid rgba(20, 21, 15, .45);
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --page-padding: 18px;
+    --header-height: 56px;
+  }
+
+  .site-header__inner {
+    width: calc(100% - 36px);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 22px 18px 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    background: var(--color-black);
+    border-bottom: 1px solid rgba(243, 237, 225, .2);
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .main-nav a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 620px;
+    height: 100svh;
+    max-height: none;
+  }
+
+  .hero__title {
+    top: 48%;
+    -webkit-text-stroke: 1px var(--color-cream);
+    font-size: clamp(88px, 25vw, 145px);
+    line-height: .9;
+  }
+
+  .hero__technical {
+    left: 18px;
+    right: 18px;
+    font-size: 9px;
+  }
+
+  .hero__technical--top {
+    top: 76px;
+  }
+
+  .hero__technical--bottom {
+    bottom: 20px;
+    gap: 16px;
+  }
+
+  .hero__technical--bottom span:last-child {
+    display: none;
+  }
+
+  .intro,
+  .about {
+    min-height: auto;
+  }
+
+  .intro__grid,
+  .about__grid {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding-block: 80px;
+  }
+
+  .display-title--intro {
+    font-size: clamp(82px, 23vw, 120px);
+  }
+
+  .intro__quote {
+    font-size: 21px;
+  }
+
+  .intro__image {
+    max-width: none;
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  .section-header {
+    padding-block: 74px 48px;
+  }
+
+  .section-header--compact {
+    padding-bottom: 35px;
+  }
+
+  .section-title {
+    font-size: clamp(64px, 18vw, 90px);
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    min-height: auto;
+    padding-block: 58px;
+  }
+
+  .project--reverse .project__info,
+  .project--reverse .project__media {
+    order: initial;
+  }
+
+  .project-title {
+    font-size: clamp(56px, 16vw, 78px);
+  }
+
+  .project__media--split {
+    grid-template-columns: 1fr;
+  }
+
+  .work-section {
+    padding-bottom: 60px;
+  }
+
+  .work-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-block: 58px;
+  }
+
+  .work-row--reverse .work-row__info,
+  .work-row--reverse .work-row__media {
+    order: initial;
+  }
+
+  .work-title {
+    font-size: clamp(48px, 14vw, 70px);
+  }
+
+  .video-grid--two,
+  .video-grid--three {
+    grid-template-columns: 1fr;
+  }
+
+  .other-work {
+    padding-bottom: 80px;
+  }
+
+  .work-category {
+    padding-block: 55px;
+  }
+
+  .work-category__heading {
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .work-category__heading .work-title {
+    font-size: clamp(42px, 12vw, 64px);
+  }
+
+  .about__grid {
+    padding-block: 80px;
+  }
+
+  .about__title {
+    font-size: 60px;
+  }
+
+  .services {
+    min-height: auto;
+    padding-block: 70px 80px;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+    margin-top: 38px;
+  }
+
+  .service-item,
+  .service-item:nth-child(2) {
+    border-right: 0;
+    border-bottom: 1px solid rgba(20, 21, 15, .45);
+    padding: 24px 0 30px;
+  }
+
+  .service-item:last-child {
+    border-bottom: 0;
+  }
+
+  .service-item__title {
+    font-size: 34px;
+  }
+
+  .contact {
+    min-height: auto;
+    padding-block: 72px 64px;
+  }
+
+  .contact__title {
+    font-size: clamp(72px, 20vw, 100px);
+  }
+
+  .contact__statement {
+    font-size: clamp(40px, 11.5vw, 58px);
+  }
+
+  .contact__links {
+    flex-direction: column;
+    gap: 17px;
+    margin-top: 48px;
+  }
+
+  .site-footer__inner {
+    min-height: 70px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .video-play {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+/* ==================================================
+   CAPA — enquadramento do cutout (Fase 7)
+   Background e cutout usam exatamente o mesmo
+   enquadramento: o cutout fica sobre o personagem
+   da foto e PORTFÓLIO passa entre as duas camadas.
+   A imagem começa abaixo do header fixo e tem a
+   largura limitada para que o personagem nunca
+   seja cortado pelas bordas. O fundo da área usa
+   o mesmo preto da borda da foto (sem emenda).
+   ================================================== */
+.hero {
+  container-type: size;
+}
+
+.hero__media,
+.hero__portrait {
+  inset: var(--header-height) 0 0 0;
+  width: auto;
+  height: auto;
+  transform: none;
+}
+
+.hero__media {
+  background: #020100;
+}
+
+.hero__media img,
+.hero__portrait img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: min(100cqw, calc((100cqh - var(--header-height) - 24px) * 2.115));
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+
+/* Telas verticais (celular e tablet em pé):
+   a foto aparece inteira na base da capa, com o
+   personagem completo dentro da largura da tela. */
+@media (max-aspect-ratio: 5/4) {
+  .hero__media img,
+  .hero__portrait img {
+    left: 50%;
+    width: 136cqw;
+    height: calc(136cqw * 941 / 1672);
+    transform: translateX(-52.65%);
+  }
+}
+
+/* ==================================================
+   JOÃO MIGUEL — til do "Ã" (Fase 7)
+   O til fica acima do "A", visível e sem encostar
+   na linha VIDEOMAKER · EDITOR · MOTION DESIGNER.
+   ================================================== */
+.display-title--intro {
+  margin-top: .17em;
+}
+
+.name-tilde {
+  top: -.6em;
+  font-size: .3em;
+}
+
+/* ==================================================
+   VÍDEOS — altura máxima (Fase 8)
+   Vídeos verticais nunca ficam mais altos que a área
+   visível da tela. A proporção de cada vídeo vem do
+   próprio arquivo (--video-ratio, definido no JS).
+   Vídeos que já cabem na tela não mudam de tamanho.
+   ================================================== */
+.video-wrapper {
+  max-width: calc((100vh - var(--header-height) - 48px) * var(--video-ratio, 100));
+  max-width: calc((100svh - var(--header-height) - 48px) * var(--video-ratio, 100));
+  margin-inline: auto;
+}
+
+/* Teclado: o botão de play volta a aparecer quando recebe foco
+   durante a reprodução (permite pausar sem mouse). */
+.video-wrapper.is-playing .video-play:focus-visible {
+  opacity: 1;
+}
+
+/* Imagens com width/height no HTML (evita salto de layout
+   no carregamento) mantêm a proporção original. */
+.intro__image img,
+.about__image img {
+  height: auto;
+}
